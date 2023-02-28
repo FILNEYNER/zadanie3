@@ -93,7 +93,9 @@ const Login = () => {
                                 onChange={e => passwordupdate(e.target.value)}
                             />
 
-                            <Button type={"button"} onClick={loginApi} fullWidth variant="contained" color="secondary" sx={{mt: 2, mb: 2}}>Войти</Button>
+                            <Button type={"button"} onClick={loginApi}
+                                    fullWidth variant="contained"
+                                    color="secondary" sx={{mt: 2, mb: 2}}>Войти</Button>
                             <p onClick={linktyregistrtion}>Регистрация</p>
                         </Box>
                     </Box>
