@@ -34,7 +34,7 @@ const Disk = () => {
             method: 'POST',
             headers: {'Authorization': `Bearer ${sessionStorage.getItem('token')}`,
                 'content-type': 'application/json'},
-            body: JSON.stringify({parentId: current, name: nameFolder})
+            body: JSON.put({parentId: current, name: nameFolder})
         }).then((res) => handleClose())
     }
     
