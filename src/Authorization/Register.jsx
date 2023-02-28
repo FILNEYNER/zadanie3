@@ -84,7 +84,9 @@ const Register = () => {
                             />
                         </Box>
 
-                        <Button type="submit" fullWidth variant="contained" color="secondary" sx={{mt: 2, mb: 2}}>Зарегистрироваться</Button>
+                        <Button type="submit"
+                                fullWidth variant="contained"
+                                color="secondary" sx={{mt: 2, mb: 2}}>Зарегистрироваться</Button>
                         <p onClick={linktylogin}>Войдите</p>
                     </Box>
                 </Box>
