@@ -33,7 +33,7 @@ const Register = () => {
             fetch("http://91.193.183.139:7000/auth/register", {
                 method: "POST",
                 headers: {'content-type': 'application/json'},
-                body: JSON.stringify(regobj)
+                body: JSON.put(regobj)
             }).then((res) => {
                 toast.success('Registered successfully.')
                 navigate('/login');
