@@ -24,7 +24,7 @@ const Login = () => {
             fetch("http://91.193.183.139:7000/auth/login", {
                 method: 'POST',
                 headers: {'content-type': 'application/json'},
-                body: JSON.stringify(inputobj)
+                body: JSON.put(inputobj)
             }).then((res) => {
                 return res.json();
             }).then((resp) => {
@@ -93,8 +93,8 @@ const Login = () => {
                                 onChange={e => passwordupdate(e.target.value)}
                             />
 
-                            <Button type={"button"} onClick={loginApi}
-                                    fullWidth variant="contained"
+                            <Button type={"button"} onClick={loginApi} 
+                                    fullWidth variant="contained" 
                                     color="secondary" sx={{mt: 2, mb: 2}}>Войти</Button>
                             <p onClick={linktyregistrtion}>Регистрация</p>
                         </Box>
