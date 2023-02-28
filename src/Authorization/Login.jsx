@@ -64,14 +64,7 @@ const Login = () => {
     return (
         <ThemeProvider theme={theme}>
             <Container maxWidth="xs">
-                <Box
-                    sx={{
-                        marginTop: 8,
-                        display: 'flex',
-                        flexDirection: 'column',
-                        alignItems: 'center',
-                    }}
-                >
+                <Box sx={{mt: 10}}>
                     <Box component="form" onSubmit={loginApi} noValidate sx={{mt: 1}}>
                         <Typography variant="h4">Вход</Typography>
                         <Box component="form" noValidate sx={{mt: 1}}>
@@ -99,6 +92,7 @@ const Login = () => {
                                 value={password}
                                 onChange={e => passwordupdate(e.target.value)}
                             />
+
                             <Button type={"button"} onClick={loginApi} fullWidth variant="contained" color="secondary" sx={{mt: 2, mb: 2}}>Войти</Button>
                             <p onClick={linktyregistrtion}>Регистрация</p>
                         </Box>
