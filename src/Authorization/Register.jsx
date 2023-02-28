@@ -27,7 +27,7 @@ const Register = () => {
         return isproceed;
     }
 
-    const Sending = () => {
+    const registerApi = () => {
         let regobj = {login, password,};
         if (IsValidate()) {
             fetch("http://91.193.183.139:7000/auth/register", {
@@ -52,15 +52,8 @@ const Register = () => {
     return (
         <ThemeProvider theme={theme}>
             <Container maxWidth="xs">
-                <Box
-                    sx={{
-                        marginTop: 8,
-                        display: 'flex',
-                        flexDirection: 'column',
-                        alignItems: 'center',
-                    }}
-                >
-                    <Box component="form" onSubmit={Sending} noValidate sx={{mt: 1}}>
+                <Box sx={{mt: 10}}>
+                    <Box component="form" onSubmit={registerApi} noValidate sx={{mt: 1}}>
                         <Typography variant="h4">
                             Регистрация
                         </Typography>
@@ -97,9 +90,6 @@ const Register = () => {
                 </Box>
             </Container>
         </ThemeProvider>
-
-
-
     );
 }
 export default Register;
