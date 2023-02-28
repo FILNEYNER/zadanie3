@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import {Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle} from "@mui/material";
+import {Button, Dialog} from "@mui/material";
 import ListFolder from "./List-folder";
 
 const Disk = () => {
-    const [current, setCurrent] = useState('root')
+    const [current] = useState('root')
     const [data, setData] = useState()
     console.log(data)
     useEffect(() => {
